@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання №3 — Анкета</title>
+</head>
+<body>
+    <h2 align="center">Завдання №3 — Анкета користувача</h2>
+
+    <form action="questionnaire.html" method="get" enctype="multipart/form-data" align="center">
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <label>Ім’я: <input type="text" name="name" placeholder="Введіть ім’я" required></label><br><br>
+            <label>Email: <input type="email" name="email" placeholder="you@mail.com" autocomplete="off" pattern="^[^@]+@[^@]+\.[^@]+$" required></label><br><br>
+            <label>Телефон: <input type="tel" name="phone" placeholder="+380XXXXXXXXX" pattern="^\+380\d{9}$"></label><br><br>
+            <label>Пароль: <input type="password" name="pass" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6,}" required></label><br><br>
+            <label>Дата народження: <input type="date" name="birth"></label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Опитування</legend>
+            <p>Ваша стать:</p>
+            <label><input type="radio" name="gender" value="male"> Чоловіча</label>
+            <label><input type="radio" name="gender" value="female" checked> Жіноча</label><br><br>
+
+            <p>Ваші хобі:</p>
+            <label><input type="checkbox" name="hobby" value="music"> Музика</label>
+            <label><input type="checkbox" name="hobby" value="games"> Ігри</label>
+            <label><input type="checkbox" name="hobby" value="travel"> Подорожі</label>
+            <label><input type="checkbox" name="hobby" value="sport"> Спорт</label><br><br>
+
+            <p>Ваша освіта:</p>
+            <select name="education">
+                <option>Школа</option>
+                <option>Коледж</option>
+                <option selected>Університет</option>
+                <option>Магістратура</option>
+                <option>Інше</option>
+            </select><br><br>
+
+            <p>Завантажте улюблену пісню:</p>
+            <input type="file" name="audio" accept="audio/*" multiple><br><br>
+        </fieldset>
+
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Очистити">
+    </form>
+
+    <p align="center"><a href="file:///C:/Users/Sasha/Desktop/web-technologies/index3.html">Повернутись на головну</a></p>
+</body>
+</html>
