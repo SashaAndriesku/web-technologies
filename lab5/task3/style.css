@@ -1,0 +1,95 @@
+body {
+    background-color: #d6f5d6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #1b3d1b;
+    text-align: center;
+}
+
+h2 {
+    color: #145214;
+    background-color: #b2e0b2;
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+form {
+    background-color: #c2f0c2;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #7ab87a;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #5ba65b;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e6ffe6;
+}
+
+legend {
+    font-weight: bold;
+    color: #145214;
+    background-color: #a4d4a4;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #5ba65b;
+    border-radius: 5px;
+    background-color: #f5fff5;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #2d802d;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3e8e41;
+}
+
+.buttons {
+    text-align: center;
+}
+
+a {
+    color: #145214;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
