@@ -1,0 +1,55 @@
+body {
+    background-color: #dcdcdc;
+    font-family: Arial, sans-serif;
+}
+
+
+.block {
+    position: absolute;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+.top {
+    background-color: green;
+    color: black;
+    width: 480px;
+    height: 70px;
+    top: 40px;
+    left: 120px;
+}
+
+
+.left {
+    background-color: cornflowerblue;
+    color: white;
+    width: 130px;
+    height: 130px;
+    top: 140px;
+    left: 120px;
+}
+
+
+.center {
+    background-color: yellowgreen;
+    color: black;
+    width: 150px;
+    height: 130px;
+    top: 140px;
+    left: 270px;
+}
+
+
+.right {
+    background-color: cornflowerblue;
+    color: white;
+    width: 130px;
+    height: 130px;
+    top: 140px;
+    left: 440px;
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: #e6e6e6;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер для всіх блоків */
+.container {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin: 100px auto;
+}
+
+/* Загальні стилі для блоків */
+.block {
+    position: absolute;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+/* Блок 1 — видно завжди */
+.block1 {
+    display: block;
+    background-color: green;
+    color: black;
+    width: 120px;
+    height: 50px;
+    top: 60px;
+    left: 50px;
+}
+
+/* Блок 2 */
+.block2 {
+    background-color: cornflowerblue;
+    color: white;
+    width: 140px;
+    height: 100px;
+    top: 40px;
+    left: 230px;
+}
+
+/* Блок 3 */
+.block3 {
+    background-color: rebeccapurple;
+    color: white;
+    width: 140px;
+    height: 100px;
+    top: 40px;
+    left: 430px;
+}
+
+/* --- Логіка появи блоків --- */
+
+/* Коли курсор над контейнером і торкається Блоку 1 — показати Блок 2 */
+.container:hover .block2 {
+    display: block;
+}
+
+/* Коли курсор над Блоком 2 — показати Блок 3 */
+.block2:hover ~ .block3 {
+    display: block;
+}
