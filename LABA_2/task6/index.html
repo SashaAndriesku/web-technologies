@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB_2</title>
+    </head>
+    <body>
+        <h1>Використати вкладені умовні оператори для визначення сезону за місяцем.</h1>
+        
+        <h2 id="result"></h2>
+
+        <script>
+            
+            function getSeasonIf(month) {
+                if (month === 12 || month === 1 || month === 2) {
+                    return "Зима";
+                } else if (month >= 3 && month <= 5) {
+                    return "Весна";
+                } else if (month >= 6 && month <= 8) {
+                    return "Літо";
+                } else if (month >= 9 && month <= 11) {
+                    return "Осінь";
+                } else {
+                    return "Некоректний номер місяця";
+                }
+            }
+
+            
+            function getSeasonTernary(month) {
+                return (month === 12 || month === 1 || month === 2) ? "Зима" :
+                       (month >= 3 && month <= 5) ? "Весна" :
+                       (month >= 6 && month <= 8) ? "Літо" :
+                       (month >= 9 && month <= 11) ? "Осінь" : 
+                       "Некоректний номер місяця";
+            }
+
+            
+            let testMonth = 10;
+            let answerIf = getSeasonIf(testMonth);
+            let answerTernary = getSeasonTernary(testMonth);
+
+            document.getElementById("result").innerText = "Місяць: " + testMonth + "\nЧерез if: " + answerIf + "\nЧерез ?: " + answerTernary;
+        </script>
+    </body>
+</html>

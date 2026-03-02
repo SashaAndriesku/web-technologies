@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB_2</title>
+    </head>
+    <body>
+        <h1>Оцінка студента в словесному форматі (через if та ?)</h1>
+        
+        <h2 id="result"></h2>
+
+        <script>
+            
+            function getGradeIf(score) {
+                if (score >= 90) {
+                    return "відмінно";
+                } else if (score >= 75) {
+                    return "добре";
+                } else if (score >= 60) {
+                    return "задовільно";
+                } else {
+                    return "незадовільно";
+                }
+            }
+
+            
+            function getGradeTernary(score) {
+                return (score >= 90) ? "відмінно" :
+                       (score >= 75) ? "добре" :
+                       (score >= 60) ? "задовільно" : 
+                       "незадовільно";
+            }
+
+            
+            let testScore = 85;
+            let answerIf = getGradeIf(testScore);
+            let answerTernary = getGradeTernary(testScore);
+
+            document.getElementById("result").innerText = "Оцінка: " + testScore + "\nЧерез if: " + answerIf + "\nЧерез ?: " + answerTernary;
+        </script>
+    </body>
+</html>

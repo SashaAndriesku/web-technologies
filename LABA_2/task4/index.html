@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB_2</title>
+    </head>
+    <body>
+        <h1>Використати логічний оператор NOT для зміни стану змінної (true на false і навпаки).</h1>
+        
+        <h2 id="result"></h2>
+
+        <script>
+            let myVariable = true;
+            let oldState = myVariable;
+            
+            
+            myVariable = !myVariable; 
+
+            document.getElementById("result").innerText = "Початковий стан: " + oldState + " | Новий стан: " + myVariable;
+        </script>
+    </body>
+</html>

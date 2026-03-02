@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB_2</title>
+    </head>
+    <body>
+        <h1>Написати функцію, яка перевіряє, чи число знаходиться в певному діапазоні.</h1>
+        
+        <h2 id="result"></h2>
+
+        <script>
+            function checkRange(num, min, max) {
+                return num >= min && num <= max;
+            }
+
+            
+            let answer = checkRange(15, 10, 20);
+
+            document.getElementById("result").innerText = "Чи знаходиться число 15 в діапазоні від 10 до 20? " + answer;
+        </script>
+    </body>
+</html>

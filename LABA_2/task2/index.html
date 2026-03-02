@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB_2</title>
+    </head>
+    <body>
+        <h1>Порівняти два об'єкти за їхніми властивостями.</h1>
+        
+        <h2 id="result"></h2>
+
+        <script>
+            function compareObjects(obj1, obj2) {
+                return obj1.name === obj2.name && obj1.age === obj2.age;
+            }
+
+            let user1 = { name: "Іван", age: 20 };
+            let user2 = { name: "Іван", age: 20 };
+
+            let answer = compareObjects(user1, user2);
+
+            document.getElementById("result").innerText = "Об'єкти однакові? " + answer;
+        </script>
+    </body>
+</html>
