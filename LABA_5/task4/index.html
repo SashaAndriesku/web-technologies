@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="shop-container">
+        <h1>Облік продуктів</h1>
+
+        <div class="section">
+            <h3 id="form-title">Додати новий продукт</h3>
+            <input type="hidden" id="old-id">
+            <input type="text" id="p-id" placeholder="ID (артикул)">
+            <input type="text" id="p-name" placeholder="Назва">
+            <input type="number" id="p-price" placeholder="Ціна">
+            <input type="number" id="p-stock" placeholder="Кількість">
+            
+            <div class="btn-group">
+                <button id="save-btn" onclick="saveProduct()">Зберегти</button>
+                <button id="cancel-btn" onclick="resetForm()" style="display:none; background:#6c757d">Скасувати</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <input type="text" id="search-input" placeholder="Пошук за назвою..." oninput="uiSearch()">
+            <div id="catalog-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

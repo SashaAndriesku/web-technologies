@@ -1,0 +1,12 @@
+body { font-family: sans-serif; background: #f4f4f4; display: flex; justify-content: center; padding: 20px; }
+.shop-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 500px; }
+.section { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 6px; }
+input { width: calc(100% - 20px); padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 4px; }
+.btn-group { display: flex; gap: 10px; margin-top: 10px; }
+button { padding: 10px; cursor: pointer; border: none; border-radius: 4px; color: white; background: #28a745; flex: 1; }
+.product-card { background: #fff; border: 1px solid #eee; padding: 10px; margin-top: 10px; border-left: 4px solid #007bff; }
+.actions { margin-top: 8px; display: flex; gap: 5px; }
+.edit-btn { background: #ffc107; color: #000; }
+.order-btn { background: #17a2b8; }
+.del-btn { background: #dc3545; }
+small { color: #666; display: block; margin-top: 5px; font-size: 11px; }

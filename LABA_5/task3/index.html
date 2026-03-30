@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock">00:00<span>:</span>00</div>
+    <hr>
+
+    <div id="timer">Встановіть таймер...</div>
+    <button onclick="setTimer()">Вказати дату</button>
+    <hr>
+
+    <input type="month" id="cal-m" onchange="renderCal()">
+    <div id="cal-grid"></div>
+    <hr>
+
+    <input type="date" id="bday-in" onchange="calcBday()">
+    <div id="bday-out">Оберіть день народження</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
