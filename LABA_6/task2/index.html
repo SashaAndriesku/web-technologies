@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Список завдань</h1>
+        <div id="sorts">
+            <button data-sort="created">За датою додавання</button>
+            <button data-sort="updated">За датою оновлення</button>
+            <button data-sort="status">За станом</button>
+        </div>
+        <form id="todo-form">
+            <input type="text" id="t-input" placeholder="Нове завдання" required>
+            <button type="submit">Додати</button>
+        </form>
+        <div id="todo-list"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

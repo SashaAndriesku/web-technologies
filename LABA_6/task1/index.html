@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Товари</h1>
+        <p>Загальна вартість: <span id="total-price">0</span> грн</p>
+    </header>
+    <main>
+        <div id="filters">
+            <button data-cat="all">Всі категорії</button>
+            <button data-cat="Електроніка">Електроніка</button>
+            <button data-cat="Одяг">Одяг</button>
+            <button data-cat="Їжа">Їжа</button>
+        </div>
+        <div id="sorts">
+            <button data-sort="none">Без сортування</button>
+            <button data-sort="price">За ціною</button>
+            <button data-sort="created">За створенням</button>
+            <button data-sort="updated">За оновленням</button>
+        </div>
+        <div id="product-list"></div>
+        <button id="btn-add">Додати новий товар</button>
+    </main>
+
+    <div id="modal" class="hidden">
+        <form id="form">
+            <input type="hidden" id="p-id">
+            <input type="text" id="p-name" placeholder="Назва" required>
+            <input type="number" id="p-price" placeholder="Ціна" required min="1">
+            <select id="p-cat" required>
+                <option value="Електроніка">Електроніка</option>
+                <option value="Одяг">Одяг</option>
+                <option value="Їжа">Їжа</option>
+            </select>
+            <input type="url" id="p-img" placeholder="URL зображення" required>
+            <button type="submit">Зберегти</button>
+            <button type="button" id="btn-close">Скасувати</button>
+        </form>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>

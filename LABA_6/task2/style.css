@@ -1,0 +1,10 @@
+body { font-family: sans-serif; margin: 20px; max-width: 600px; }
+#todo-list { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.todo { display: flex; gap: 10px; padding: 10px; border: 1px solid #ccc; align-items: center; animation: fadeIn 0.3s; }
+.todo.removing { animation: fadeOut 0.3s forwards; }
+.todo.done input[type="text"] { text-decoration: line-through; color: #888; }
+.todo input[type="text"] { flex: 1; border: 1px solid transparent; background: transparent; outline: none; font-size: 16px; padding: 5px; }
+.todo input[type="text"]:not([readonly]) { border: 1px solid #007bff; background: #fff; }
+button { cursor: pointer; padding: 5px 10px; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeOut { to { opacity: 0; transform: translateX(-20px); } }
