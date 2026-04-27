@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Gunman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-top">
+            <div class="text-center">REWARD<br>$<span id="ui-reward">0</span></div>
+            <div class="text-center">SCORE<br>$<span id="ui-score">0</span></div>
+        </div>
+        
+        <div id="arena">
+            <div id="character" class="hidden">🤠</div>
+            <div id="message" class="hidden">FIRE!!</div>
+        </div>
+
+        <div id="ui-bottom">
+            <div>YOU: <span id="ui-p-time">0.00</span></div>
+            <div>GUNMAN: <span id="ui-e-time">0.00</span></div>
+        </div>
+
+        <div id="start-screen">
+            <h1>WILD GUNMAN</h1>
+            <p>CLICK TO START</p>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h1>GAME OVER</h1>
+            <p>FINAL SCORE: $<span id="final-score">0</span></p>
+            <button id="restart-btn">RETRY</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
