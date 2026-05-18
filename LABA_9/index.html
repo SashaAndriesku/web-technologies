@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота №9</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="page">
+    <section class="form-card">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="signup">Signup</button>
+            <button class="tab-btn" data-tab="login">Login</button>
+        </div>
+
+        <div id="successMessage" class="success-message"></div>
+
+        <form id="signupForm" class="form active" novalidate>
+            <h1>Create an account</h1>
+
+            <div class="form-group">
+                <label for="signupUser">Username</label>
+                <input id="signupUser" name="username" type="text" placeholder="Enter username" />
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input id="signupEmail" name="email" type="email" placeholder="Enter email" />
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="signupPass">Password</label>
+                <div class="password-box">
+                    <input id="signupPass" name="password" type="password" placeholder="Enter password" />
+                    <button type="button" class="toggle-password" data-target="signupPass">👁</button>
+                </div>
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPass">Confirm Password</label>
+                <div class="password-box">
+                    <input id="confirmPass" name="confirmPassword" type="password" placeholder="Confirm password" />
+                    <button type="button" class="toggle-password" data-target="confirmPass">👁</button>
+                </div>
+                <small class="error"></small>
+            </div>
+
+            <button type="submit" class="submit-btn">Signup</button>
+        </form>
+
+        <form id="loginForm" class="form" novalidate>
+            <h1>Login here</h1>
+
+            <div class="form-group">
+                <label for="loginUser">Username</label>
+                <input id="loginUser" name="username" type="text" placeholder="Enter username" />
+                <small class="error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPass">Password</label>
+                <div class="password-box">
+                    <input id="loginPass" name="password" type="password" placeholder="Enter password" />
+                    <button type="button" class="toggle-password" data-target="loginPass">👁</button>
+                </div>
+                <small class="error"></small>
+            </div>
+
+            <label class="remember">
+                <input name="rememberMe" type="checkbox" />
+                Remember Me
+            </label>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
